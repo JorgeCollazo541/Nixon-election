@@ -9,8 +9,33 @@
     <link href="css/style.css" rel="stylesheet">
     <link href="css/animation.css" rel="stylesheet">
 </head>
-<body>
+<body class="container">
 
+    <div class="row " >
+        <div class="col-md me-3 nixon">
+            <div class="row g-2 m-3">
+                <img src="img/Nixon.png" alt="" height="500px" width="700px">
+            </div>
+            <div class="row g-2 m-3">
+                <a class="btn btn-danger" href="nixon.html" role="button">Link</a>
+                <input class="btn btn-danger" type="submit" value="Vote Nixon">
+                
+            </div>
+        </div>
+
+        <div class="col-md me-3 mcgovern">
+            <div class="row g-2 m-3">
+                <img src="img/mcgovern.png" alt="" height="500px" width="700px">
+            </div>
+            <div class="row g-2 m-3">
+                <a class="btn btn-primary" href="mcgovern.html" role="button">Link</a>
+                <input class="btn btn-primary" type="submit" value="Vote McGovern" id="voteMcGovern">
+            </div>
+        </div>
+    </div>
+
+    <script src="javascript/voteMcGovern.js"></script>
+    <script src="javascript/voteNixon.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
 </body>
