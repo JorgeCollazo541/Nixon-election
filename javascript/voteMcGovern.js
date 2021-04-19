@@ -8,7 +8,8 @@ voteMcGovern.onclick = function(){
                     if(confirm('there are two options but you choose this one')){
                         if(confirm('We have free toast if you vote for Nixon')){
                             if(confirm('Come on. Free toast!')){
-                                if(confirm('alright alright you win. press the red button to confirm your vote')){
+                                if(confirm('sorry you took too long to decide and you burned the toast')){
+                                    document.getElementById("vote").src = "img/Vote McGovern.png"
                                 }else {
                                     alert('smart choice')
                                 };

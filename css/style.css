@@ -2,6 +2,7 @@
 html{
     cursor: url("../img/toast.png"), default;
     cursor: url("../img/toast.png"), pointer;
+    border-color: black;
 }
 
 body{
@@ -9,10 +10,3 @@ body{
     background-size: cover;
     position: relative;
 }
-
-/* --Nixon-- */
-
-/* --McGovern-- */
-/* ---- */
-/* ---- */
-/* ---- */
