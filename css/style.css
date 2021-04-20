@@ -6,7 +6,27 @@ html{
 }
 
 body{
-    background: url("../img/Flag.png");
+    background: url("../img/Flag.png"); 
     background-size: cover;
     position: relative;
+}
+area{
+    display: none;
+    cursor: url('..img/toast.png'), pointer;
+}
+#voteNixon{
+    background: #bb0000;
+    color: white;
+}
+#voteMcGovern{
+    background: #0000aa;
+    color: white;
+}
+#select #red{
+    border-right: red solid;
+    border-bottom: red solid;
+}
+#select #blue{
+    border-left: blue solid;
+    border-bottom: blue solid;
 }
