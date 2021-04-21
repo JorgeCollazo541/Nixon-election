@@ -1,33 +1,43 @@
-field.onmousemove = function(event) {
+let mcGovernField = document.getElementById("mcGovernField")
+let butter = document.getElementById("butter")
+
+mcGovernField.onmousemove = function(event) {
 
     // window-relative field coordinates
-    let fieldCoords = this.getBoundingClientRect();
+    let mcGovernFieldCoords = this.getBoundingClientRect();
 
-    // the ball has position:absolute, the field: position:relative
-    // so ball coordinates are relative to the field inner left-upper corner
-    let ballCoords = {
-      top: event.clientY - fieldCoords.top - field.clientTop - ball.clientHeight / 2,
-      left: event.clientX - fieldCoords.left - field.clientLeft - ball.clientWidth / 2
+    // the butter has position:absolute, the field: position:relative
+    // so butter coordinates are relative to the field inner left-upper corner
+    let butterCoords = {
+      top: event.clientY - mcGovernFieldCoords.top - mcGovernField.clientTop - butter.clientHeight / 2,
+      left: event.clientX - mcGovernFieldCoords.left - mcGovernField.clientLeft - butter.clientWidth / 2
     };
 
     // prevent crossing the top field boundary
-    if (ballCoords.top < 0) ballCoords.top = 0;
+    if (butterCoords.top < 0) butterCoords.top = 0;
 
     // prevent crossing the left field boundary
-    if (ballCoords.left < 0) ballCoords.left = 0;
+    if (butterCoords.left < 0) butterCoords.left = 0;
 
 
     // // prevent crossing the right field boundary
-    if (ballCoords.left + ball.clientWidth > field.clientWidth) {
-      ballCoords.left = field.clientWidth - ball.clientWidth;
+    if (butterCoords.left + butter.clientWidth > mcGovernField.clientWidth) {
+      butterCoords.left = mcGovernField.clientWidth - butter.clientWidth;
     }
 
     // prevent crossing the bottom field boundary
-    if (ballCoords.top + ball.clientHeight > field.clientHeight) {
-      ballCoords.top = field.clientHeight - ball.clientHeight;
+    if (butterCoords.top + butter.clientHeight > mcGovernField.clientHeight) {
+      butterCoords.top = mcGovernField.clientHeight - butter.clientHeight;
     }
 
-    ball.style.left = ballCoords.left + 'px';
-    ball.style.top = ballCoords.top + 'px';
+    butter.style.left = butterCoords.left + 'px';
+    butter.style.top = butterCoords.top + 'px';
 
+}
+
+butter.onclick = function() {
+  var i;
+  for(i = 0; i < 3; i++){
+    alert("try voting for someone else, they might have toast")
   }
+}

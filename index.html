@@ -15,19 +15,21 @@
             <h5>US Election</h5>
         </div>
         <div class="row" id="select">
-            <div class="col text-center " id="red">
+            <div class="col text-center " id="nixonField">
+                <img src="img/butter.png" width="50px" height="50px">
                 <input class="btn btn-lg" type="submit" value="Vote Nixon" id="voteNixon">
             </div>
-            <div class="col text-center" id="blue">
+            <div class="col text-center" id="mcGovernField">
                 <input class="btn btn-lg" type="submit" value="Vote McGovern" id="voteMcGovern">
+                <img src="img/butter.png" width="50px" height="50px" id="butter">
             </div>
         </div>
     </div>
     <div class="text-center">
-        <img src="img/Vote Now.png" alt="" width="1000px" height="1000px" class="text-center" id="vote" usemap="#voteSelect">
+        <img src="img/Vote Now.png" alt="" width="700px" height="700px" class="text-center" id="vote" usemap="#voteSelect">
         <map name="voteSelect">
-            <area shape="rect"  coords="230,260,600,350" alt="select" id="NixonChoice">
-            <area shape="rect"  coords="600,230,700,320" alt="select" id="McGovernChoice">
+            <area shape="rect" coords="200,240,418,270" alt="select" id="NixonChoice">
+            <area shape="rect" coords="240,215,460,260" alt="select" id="McGovernChoice">
         </map>
     </div>
 
@@ -37,6 +39,7 @@
     <script src="javascript/voteMcGovern.js"></script>
     <script src="javascript/voteNixon.js"></script>
     <script src="javascript/general.js"></script>
+    <script src="javascript/butter.js"></script>
 </body>
 </html>
 

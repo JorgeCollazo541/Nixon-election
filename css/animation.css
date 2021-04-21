@@ -1,0 +1,15 @@
+@keyframes blueBlip{
+    0%{background: #0000aa;}
+    25%{background: #0000ff;}
+    50%{background: #3e3eff;}
+    75%{background: #0000ff;}
+    100%{background: #0000aa;}
+  }
+
+@keyframes redBlip{
+    0%{background: #bb0000;}
+    25%{background: #e00000;}
+    50%{background: #ff0000;}
+    75%{background: #e00000;}
+    100%{background: #bb0000;}
+  }

@@ -2,10 +2,10 @@ let voteMcGovern = document.getElementById("voteMcGovern")
 let mcGovernChoice = document.getElementById("McGovernChoice")
 
 mcGovernChoice.onmouseover = function(){
-    voteMcGovern.style.background = "blue"
+    voteMcGovern.style.animationPlayState = "running"
 }
 mcGovernChoice.onmouseout = function(){
-    voteMcGovern.style.background = "#0000aa"
+    voteMcGovern.style.animationPlayState = "paused"
 }
 
 voteMcGovern.onclick = function(){

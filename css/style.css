@@ -1,7 +1,7 @@
 /* --General-- */
 html{
-    cursor: url("../img/toast.png"), default;
-    cursor: url("../img/toast.png"), pointer;
+    /* cursor: url("../img/toast.png"), default;
+    cursor: url("../img/toast.png"), pointer; */
     border-color: black;
 }
 
@@ -16,17 +16,32 @@ area{
 }
 #voteNixon{
     background: #bb0000;
-    color: white;
+    color: #ffffff;
+    animation: redBlip 1s infinite ease-in-out;
+    animation-play-state: paused;
 }
 #voteMcGovern{
     background: #0000aa;
-    color: white;
+    color: #fdfdfd;
+    animation: blueBlip 1s infinite ease-in;
+    animation-play-state: paused;
 }
-#select #red{
+#select{
+    width: 110%;
+    height: 20%;
+}
+#nixonField{
     border-right: red solid;
     border-bottom: red solid;
 }
-#select #blue{
+#mcGovernField{
     border-left: blue solid;
     border-bottom: blue solid;
+    position: relative;
+    overflow: hidden;
 }
+
+  #butter {
+    position: absolute;
+    transition: all 2s;
+  }
