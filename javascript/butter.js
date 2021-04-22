@@ -6,7 +6,6 @@ mcGovernField.onmousemove = function(event) {
     // window-relative field coordinates
     let mcGovernFieldCoords = this.getBoundingClientRect();
 
-    // the butter has position:absolute, the field: position:relative
     // so butter coordinates are relative to the field inner left-upper corner
     let butterCoords = {
       top: event.clientY - mcGovernFieldCoords.top - mcGovernField.clientTop - butter.clientHeight / 2,
@@ -36,8 +35,6 @@ mcGovernField.onmousemove = function(event) {
 }
 
 butter.onclick = function() {
-  var i;
-  for(i = 0; i < 3; i++){
-    alert("try voting for someone else, they might have toast")
-  }
+  alert("try voting for someone else, they might have toast")
+  window.removeEventListener("mousemove", mcGovernField)
 }

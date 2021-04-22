@@ -1,17 +1,19 @@
-document.body.onload = function(){
+function voter(name, id, favPress){
     let voter = {}
-    let name = prompt('what is your name', "");
-    let id = prompt('What is your id number', "");
-    let favPres = prompt('What president are you considering voting for', "Nixon");
+    name = prompt('What is your name', "");
+    id = prompt('What is your id number', "");
+    favPress = prompt('What president are you considering voting for', "Nixon");
 
-    voter["Name"] = name; 
-    voter["ID"] = id; 
-    voter["Favorite President"] = favPres; 
+    voter['name'] = name
+    voter['id'] = id
+    voter['favPres'] = favPress
 
-    alert(`Hello ${this.voter["Name"]}, we are glad you decided to vote and are deciding to vote for Nixon`)
 }
 
-document.body.oncontextmenu = function(){
-    event.preventDefault();
-    alert("dont think so buddy")
-}
+window.addEventListener("load", voter);
+
+
+// document.body.oncontextmenu = function(){
+//     event.preventDefault();
+//     alert("Sorry but this is not for you")
+// }

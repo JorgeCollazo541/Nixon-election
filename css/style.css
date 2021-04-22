@@ -43,5 +43,5 @@ area{
 
   #butter {
     position: absolute;
-    transition: all 2s;
+    transition: all .3s;
   }
